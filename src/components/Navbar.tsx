@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
+import { profile } from "../data/profile";
 
 export default function Navbar() {
   return (
@@ -19,7 +20,7 @@ border-b border-[#D1D5DB] dark:border-white/10
       <div className="flex justify-between items-center px-10 py-4">
 
         {/* LOGO */}
-        <h1 className="text-xl font-bold">JI</h1>
+        <h1 className="text-xl font-bold">{profile.initials}</h1>
 
         {/* NAV LINKS + THEME */}
         <div className="flex items-center gap-6">

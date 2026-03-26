@@ -2,9 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { profile } from "../data/profile";
 
 export default function Hero() {
-  const text = "Building the Intelligence Behind the Stack";
+  const text = profile.tagline;
   const [displayed, setDisplayed] = useState("");
 
   useEffect(() => {
@@ -15,7 +16,7 @@ export default function Hero() {
       if (i > text.length) clearInterval(interval);
     }, 40);
     return () => clearInterval(interval);
-  }, []);
+  }, [text]);
 
   return (
     <section className="min-h-screen flex flex-col justify-center px-10">
@@ -26,7 +27,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="text-5xl md:text-7xl font-bold leading-tight"
       >
-        Janul Induwara:
+        {profile.name}:
         <br />
         <span className="text-[#FF3B3B]">{displayed}</span>
       </motion.h1>
@@ -37,7 +38,7 @@ export default function Hero() {
         transition={{ delay: 1 }}
         className="mt-4 text-gray-400 text-lg"
       >
-        Software Engineering Undergraduate at IIT | ML Engineer & Full-Stack Developer
+        {profile.subtitle}
       </motion.p>
 
       <motion.div
@@ -48,7 +49,7 @@ export default function Hero() {
       >
         <button className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105">
           <a
-          href="/Janul_Induwara_CV.pdf"
+          href={profile.cvPath}
            target="_blank"
           rel="noopener noreferrer"
           className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105"

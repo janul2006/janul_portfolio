@@ -1,8 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { profile } from "../data/profile";
 
 export default function Experience() {
+  const timelineItems = [
+    ...profile.experience.map((exp) => ({
+      title: exp.title,
+      description: exp.description,
+      subDescription: undefined as string | undefined,
+      side: exp.side,
+    })),
+    ...profile.education.map((edu) => ({
+      title: edu.title,
+      description: "institution" in edu ? edu.institution : undefined,
+      subDescription: edu.description,
+      side: edu.side,
+    })),
+  ];
+
   return (
     <motion.section
       id="experience"
@@ -22,48 +38,22 @@ export default function Experience() {
         <div className="absolute left-1/2 top-0 w-[2px] h-full bg-[#FF3B3B] transform -translate-x-1/2"></div>
 
         <div className="space-y-16">
-
-          {/* EXPERIENCE (RIGHT SIDE) */}
-          <div className="flex justify-end">
-            <div className="w-[45%] glass p-5 rounded-xl glow">
-              <h3 className="font-bold text-lg">ML Engineer – Ez-Toll</h3>
-              <p className="text-gray-400">
-                Built ANPR system with 92% accuracy using YOLO & OCR.
-              </p>
+          {timelineItems.map((entry, index) => (
+            <div
+              key={index}
+              className={`flex ${entry.side === "right" ? "justify-end" : "justify-start"}`}
+            >
+              <div className="w-[45%] glass p-5 rounded-xl glow">
+                <h3 className="font-bold text-lg">{entry.title}</h3>
+                {entry.description && (
+                  <p className="text-gray-400">{entry.description}</p>
+                )}
+                {entry.subDescription && (
+                  <p className="text-gray-400 text-sm">{entry.subDescription}</p>
+                )}
+              </div>
             </div>
-          </div>
-
-          <div className="flex justify-end">
-            <div className="w-[45%] glass p-5 rounded-xl glow">
-              <h3 className="font-bold text-lg">Field Operation Support – WHO</h3>
-              <p className="text-gray-400">
-                Supported survey operations and ensured data reliability.
-              </p>
-            </div>
-          </div>
-
-          {/* EDUCATION (LEFT SIDE) */}
-          <div className="flex justify-start">
-            <div className="w-[45%] glass p-5 rounded-xl glow">
-              <h3 className="font-bold text-lg">🎓 BSc Software Engineering</h3>
-              <p className="text-gray-400">
-                Informatics Institute of Technology (IIT)
-              </p>
-              <p className="text-gray-400 text-sm">
-                Focus: AI, Machine Learning, Fullstack Development
-              </p>
-            </div>
-          </div>
-
-          <div className="flex justify-start">
-            <div className="w-[45%] glass p-5 rounded-xl glow">
-              <h3 className="font-bold text-lg">🏫 Sri Sumangala College</h3>
-              <p className="text-gray-400">
-                Strong foundation in Mathematics, English & IT
-              </p>
-            </div>
-          </div>
-
+          ))}
         </div>
       </div>
 
