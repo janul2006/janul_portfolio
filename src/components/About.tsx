@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import profileImg from "../img/profile_image.png";
+import { profile } from "../data/profile";
 
 export default function About() {
   return (
@@ -24,18 +25,12 @@ export default function About() {
           </h2>
 
           <p className="mt-4 text-gray-400 max-w-xl">
-            I am a Software Engineering undergraduate passionate about Machine Learning, AI, and Fullstack development.
-
-            I enjoy building real-world systems combining software and intelligent technologies.
-
-            Currently learning Machine Learning, Algorithms, and Fullstack systems.
-
-            My goal is to become a Machine Learning Engineer.
+            {profile.bio}
           </p>
 
           {/* TECH STACK */}
           <div className="mt-6 flex flex-wrap gap-3">
-            {["Python","Java","C++","React","Spring Boot","YOLO","OpenCV"].map((tech) => (
+            {profile.techStack.map((tech) => (
               <span
                 key={tech}
                 className="px-3 py-1 border border-[#FF3B3B] rounded-full text-sm hover:bg-[#FF3B3B] hover:text-white transition"
@@ -55,7 +50,7 @@ export default function About() {
 
             <Image
               src = {profileImg}  
-              alt="Janul Induwara"
+              alt={profile.name}
               fill
               className="rounded-full object-cover border-4 border-[#FF3B3B]/30 shadow-xl"
             />
