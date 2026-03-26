@@ -83,3 +83,43 @@ body {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* =========================
+   LIGHT MODE (NEW)
+========================= */
+
+html:not(.dark) body {
+  background: #F8F9FA;
+  color: #121212;
+}
+
+/* Secondary text */
+html:not(.dark) .text-gray-400 {
+  color: #4A4A4A;
+}
+
+/* Cards / Glass */
+html:not(.dark) .glass {
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+}
+
+/* Navbar */
+html:not(.dark) nav {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #D1D5DB;
+}
+
+/* Accent color */
+html:not(.dark) .text-\[\#FF3B3B\] {
+  color: #E63946;
+}
+
+/* Buttons */
+html:not(.dark) button {
+  color: #121212;
+}
+
+html:not(.dark) .bg-\[\#FF3B3B\] {
+  background: #E63946;
+}
