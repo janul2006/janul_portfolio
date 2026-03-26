@@ -89,25 +89,27 @@ body {
 ========================= */
 
 html:not(.dark) body {
-  background: #F8F9FA;
+  background: linear-gradient(180deg, #F8F9FA 0%, #EEF1F4 100%);
   color: #121212;
 }
 
 /* Secondary text */
 html:not(.dark) .text-gray-400 {
-  color: #4A4A4A;
+  color: #5A5A5A;
 }
 
 /* Cards / Glass */
 html:not(.dark) .glass {
   background: #FFFFFF;
-  border: 1px solid #D1D5DB;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 /* Navbar */
 html:not(.dark) nav {
-  background: rgba(255, 255, 255, 0.8);
-  border-color: #D1D5DB;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-color: #E5E7EB;
 }
 
 /* Accent color */
@@ -116,10 +118,42 @@ html:not(.dark) .text-\[\#FF3B3B\] {
 }
 
 /* Buttons */
-html:not(.dark) button {
-  color: #121212;
-}
-
 html:not(.dark) .bg-\[\#FF3B3B\] {
   background: #E63946;
+  color: white;
+}
+
+html:not(.dark) .border-white {
+  border-color: #D1D5DB;
+}
+
+html:not(.dark) .glow:hover {
+  box-shadow: 0 10px 25px rgba(230, 57, 70, 0.25);
+}
+
+/* CLICK RIPPLE EFFECT */
+.dark .click-ripple {
+  background: rgba(255, 77, 77, 0.5);
+}
+.click-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background: rgba(255, 59, 59, 0.4);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: ripple 0.6s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(6);
+  }
 }

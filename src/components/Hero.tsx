@@ -47,7 +47,15 @@ export default function Hero() {
         className="mt-6 flex gap-4"
       >
         <button className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105">
+          <a
+          href="/Janul_Induwara_CV.pdf"
+           target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105"
+          >
+      
           Download CV
+          </a>
         </button>
 
         <button className="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black hover:scale-105">

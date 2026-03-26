@@ -1,4 +1,5 @@
 import "./globals.css";
+import ClickEffect from "@/components/ClickEffect";
 
 export const metadata = {
   title: "Janul Induwara Portfolio",
@@ -12,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className="bg-[#0A0A0A] text-white">{children}</body>
+      <body className="bg-[#0A0A0A] text-white"><ClickEffect />{children}</body>
     </html>
   );
 }
