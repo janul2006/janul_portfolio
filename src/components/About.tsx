@@ -8,7 +8,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="px-10 py-20"
+      className="container-custom"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
