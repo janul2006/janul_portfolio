@@ -18,7 +18,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen flex flex-col justify-center px-5 md:px-10">
+    <section className="min-h-screen flex flex-col justify-center px-10">
 
       <motion.h1
         initial={{ opacity: 0, y: 50 }}
@@ -28,7 +28,7 @@ export default function Hero() {
       >
         Janul Induwara:
         <br />
-        <span className="text-[rgb(255,59,59)]">{displayed}</span>
+        <span className="text-[#FF3B3B]">{displayed}</span>
       </motion.h1>
 
       <motion.p
@@ -44,7 +44,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.3 }}
-        className="mt-6 flex  sm:flex-row gap-4"
+        className="mt-6 flex gap-4"
       >
         <button className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105">
           <a

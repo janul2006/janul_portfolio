@@ -17,7 +17,7 @@ const item = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="container-custom">
+    <section id="projects" className="px-10 py-20">
 
       <h2 className="text-4xl font-bold mb-10">
         Featured <span className="text-[#FF3B3B]">Projects</span>
@@ -27,7 +27,7 @@ export default function Projects() {
         variants={container}
         initial="hidden"
         whileInView="show"
-        className="grid md:grid-auto gap-6"
+        className="grid md:grid-cols-3 gap-6"
       >
 
         {/* EZ-TOLL */}

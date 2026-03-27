@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <motion.section
       id="experience"
-      className="container-custom"
+      className="px-10 py-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
