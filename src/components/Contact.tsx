@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { profile } from "../data/profile";
 
 export default function Contact() {
   return (
@@ -25,10 +26,10 @@ export default function Contact() {
                         hover:-translate-y-2 hover:shadow-lg transition duration-300">
           <h3 className="font-bold text-lg mb-2">📧 Email</h3>
           <a
-            href="mailto:janul.induwara2006@gmail.com"
+            href={`mailto:${profile.contact.email}`}
             className="text-gray-400 hover:text-[#FF3B3B] transition"
           >
-            janul.induwara2006@gmail.com
+            {profile.contact.email}
           </a>
         </div>
 
@@ -37,11 +38,11 @@ export default function Contact() {
                         hover:-translate-y-2 hover:shadow-lg transition duration-300">
           <h3 className="font-bold text-lg mb-2">💻 GitHub</h3>
           <a
-            href="https://github.com/janul2006"
+            href={profile.contact.github}
             target="_blank"
             className="text-gray-400 hover:text-[#FF3B3B] transition"
           >
-            github.com/janul2006
+            {profile.contact.githubLabel}
           </a>
         </div>
 
@@ -50,7 +51,7 @@ export default function Contact() {
                         hover:-translate-y-2 hover:shadow-lg transition duration-300">
           <h3 className="font-bold text-lg mb-2">🔗 LinkedIn</h3>
           <a
-            href="https://www.linkedin.com/in/janul-induwara-7a67a9388/"
+            href={profile.contact.linkedin}
             target="_blank"
             className="text-gray-400 hover:text-[#FF3B3B] transition"
           >
