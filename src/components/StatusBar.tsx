@@ -4,7 +4,7 @@ export default function StatusBar() {
       <div className="animate-marquee text-gray-400">
         CURRENTLY_STUDYING: Machine Learning, Algorithms •
         LATEST_PROJECT: Smart Incident System •
-        STATUS: Open for Internships 🚀
+        STATUS: Open for Internships 
       </div>
     </div>
   );

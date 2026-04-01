@@ -45,7 +45,7 @@ export default function Experience() {
           {/* EDUCATION (LEFT SIDE) */}
           <div className="flex justify-start">
             <div className="w-[45%] glass p-5 rounded-xl glow">
-              <h3 className="font-bold text-lg">🎓 BSc Software Engineering</h3>
+              <h3 className="font-bold text-lg"> BSc Software Engineering</h3>
               <p className="text-gray-400">
                 Informatics Institute of Technology (IIT)
               </p>
@@ -57,7 +57,7 @@ export default function Experience() {
 
           <div className="flex justify-start">
             <div className="w-[45%] glass p-5 rounded-xl glow">
-              <h3 className="font-bold text-lg">🏫 Sri Sumangala College</h3>
+              <h3 className="font-bold text-lg"> Sri Sumangala College</h3>
               <p className="text-gray-400">
                 Strong foundation in Mathematics, English & IT
               </p>

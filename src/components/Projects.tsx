@@ -32,12 +32,12 @@ export default function Projects() {
 
         {/* EZ-TOLL */}
         <motion.a
-          href="https://github.com/janul2006/eztollhttps://github.com/Sheran101/Ez-Toll-SDGP" // 🔥 replace
+          href="https://github.com/janul2006/Ez-Toll-SDGP" //  replace
           target="_blank"
           variants={item}
           className="md:col-span-1 glass p-5 rounded-xl glow cursor-pointer  block"
         >
-          <h3 className="text-2xl font-bold">🚗 Ez-Toll Smart Gate</h3>
+          <h3 className="text-2xl font-bold"> Ez-Toll Smart Gate</h3>
           <p className="text-[#FF3B3B] font-bold text-xl">92% Accuracy</p>
           <p className="text-gray-400 mt-2">
             AI-powered ANPR system using YOLOv8 & OCR.
@@ -51,7 +51,7 @@ export default function Projects() {
           variants={item}
           className="md:col-span-1 glass p-5 rounded-xl glow cursor-pointer  block"
         >
-          <h3 className="font-bold">📱 GoWaste</h3>
+          <h3 className="font-bold"> GoWaste</h3>
           <p className="text-gray-400">UI/UX Prototype</p>
         </motion.a>
 
@@ -62,7 +62,7 @@ export default function Projects() {
           variants={item}
           className="md:col-span-1 glass p-5 rounded-xl glow cursor-pointer block"
         >
-          <h3 className="font-bold">🚨 Smart Incident System</h3>
+          <h3 className="font-bold"> Smart Incident System</h3>
           <p className="text-gray-400">
             Fullstack dashboard using React & Spring Boot.
           </p>
