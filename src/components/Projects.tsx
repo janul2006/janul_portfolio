@@ -67,6 +67,33 @@ export default function Projects() {
             Fullstack dashboard using React & Spring Boot.
           </p>
         </motion.a>
+        {/* PHISHING DETECTION SYSTEM */}
+<motion.a
+  href="https://github.com/janul2006/phishing-detection-system" // replace with your repo
+  target="_blank"
+  variants={item}
+  className="md:col-span-1 glass p-5 rounded-xl glow cursor-pointer block"
+>
+  <h3 className="text-2xl font-bold">
+    AI Phishing Detection Platform
+  </h3>
+
+  <p className="text-[#00FF9C] font-bold text-xl">
+    Real-Time Detection 
+  </p>
+
+  <p className="text-gray-400 mt-2">
+    Fullstack cybersecurity system using Laravel + FastAPI to detect phishing URLs with machine learning in real-time.
+  </p>
+
+  <div className="mt-3 flex flex-wrap gap-2 text-xs">
+    <span className="bg-gray-800 px-2 py-1 rounded">Laravel</span>
+    <span className="bg-gray-800 px-2 py-1 rounded">FastAPI</span>
+    <span className="bg-gray-800 px-2 py-1 rounded">Machine Learning</span>
+    <span className="bg-gray-800 px-2 py-1 rounded">Redis</span>
+    <span className="bg-gray-800 px-2 py-1 rounded">MySQL</span>
+  </div>
+</motion.a>
 
       </motion.div>
 
