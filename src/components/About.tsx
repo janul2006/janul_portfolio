@@ -8,7 +8,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="px-10 py-20"
+      className="px-4 sm:px-6 lg:px-10 py-16 sm:py-20"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -19,11 +19,11 @@ export default function About() {
 
         {/* LEFT SIDE (TEXT) */}
         <div>
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-3xl sm:text-4xl font-bold">
             About <span className="text-[#FF3B3B]">Me</span>
           </h2>
 
-          <p className="mt-4 text-gray-400 max-w-xl">
+          <p className="mt-4 text-gray-400 max-w-xl text-sm sm:text-base leading-relaxed">
             I am a Software Engineering undergraduate passionate about Machine Learning, AI, and Fullstack development.
 
             I enjoy building real-world systems combining software and intelligent technologies.
@@ -34,11 +34,11 @@ export default function About() {
           </p>
 
           {/* TECH STACK */}
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-6 flex flex-wrap gap-2 sm:gap-3">
             {["Python","Java","C++","React","Spring Boot","YOLO","OpenCV"].map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 border border-[#FF3B3B] rounded-full text-sm hover:bg-[#FF3B3B] hover:text-white transition"
+                className="px-3 py-1 border border-[#FF3B3B] rounded-full text-xs sm:text-sm hover:bg-[#FF3B3B] hover:text-white transition"
               >
                 {tech}
               </span>
@@ -48,7 +48,7 @@ export default function About() {
 
         {/* RIGHT SIDE (IMAGE) */}
         <div className="flex justify-center">
-          <div className="relative w-[280px] h-[280px] md:w-[350px] md:h-[350px]">
+          <div className="relative w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] md:w-[350px] md:h-[350px]">
 
             {/* GLOW EFFECT */}
             <div className="absolute inset-0 rounded-full bg-[#FF3B3B]/20 blur-2xl"></div>

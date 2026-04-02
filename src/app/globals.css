@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 
 /* Smooth animations */
 * {
@@ -155,5 +163,15 @@ html:not(.dark) .glow:hover {
   100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(6);
+  }
+}
+
+@media (max-width: 640px) {
+  .glow:hover {
+    transform: none;
+  }
+
+  .fade-in {
+    animation-duration: 0.7s;
   }
 }

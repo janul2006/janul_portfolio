@@ -17,9 +17,9 @@ const item = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-10 py-20">
+    <section id="projects" className="px-4 sm:px-6 lg:px-10 py-16 sm:py-20">
 
-      <h2 className="text-4xl font-bold mb-10">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-10">
         Featured <span className="text-[#FF3B3B]">Projects</span>
       </h2>
 
@@ -27,7 +27,7 @@ export default function Projects() {
         variants={container}
         initial="hidden"
         whileInView="show"
-        className="grid md:grid-cols-3 gap-6"
+        className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6"
       >
 
         {/* EZ-TOLL */}
@@ -38,13 +38,13 @@ export default function Projects() {
     variants={item}
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.97 }}
-    className="glass p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
+     className="glass p-5 sm:p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
   >
-    <h3 className="text-2xl font-bold mb-1">
+     <h3 className="text-xl sm:text-2xl font-bold mb-1">
        Ez-Toll Smart Gate
     </h3>
 
-    <p className="text-[#FF3B3B] font-bold text-lg">
+     <p className="text-[#FF3B3B] font-bold text-base sm:text-lg">
        92% Accuracy
     </p>
 
@@ -74,13 +74,13 @@ export default function Projects() {
           variants={item}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
-          className="glass p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
+          className="glass p-5 sm:p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
         >
-          <h3 className="text-2xl font-bold mb-1">
+          <h3 className="text-xl sm:text-2xl font-bold mb-1">
              GoWaste
           </h3>
 
-          <p className="text-[#00FF9C] font-bold text-lg">
+          <p className="text-[#00FF9C] font-bold text-base sm:text-lg">
             Smart Waste Solution
           </p>
 
@@ -108,13 +108,13 @@ export default function Projects() {
           variants={item}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
-          className="glass p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
+           className="glass p-5 sm:p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
         >
-          <h3 className="text-2xl font-bold mb-1">
+           <h3 className="text-xl sm:text-2xl font-bold mb-1">
              Smart Incident System
           </h3>
 
-          <p className="text-[#00D1FF] font-bold text-lg">
+           <p className="text-[#00D1FF] font-bold text-base sm:text-lg">
              Real-Time Monitoring
           </p>
 
@@ -145,13 +145,13 @@ export default function Projects() {
     variants={item}
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.97 }}
-    className="md:col-span-1 glass p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
+    className="md:col-span-1 glass p-5 sm:p-6 rounded-2xl glow cursor-pointer block transition-all duration-300"
   >
-    <h3 className="text-2xl font-bold mb-1">
+      <h3 className="text-xl sm:text-2xl font-bold mb-1">
       AI Phishing Detection Platform
     </h3>
 
-    <p className="text-[#00FF9C] font-bold text-lg">
+      <p className="text-[#00FF9C] font-bold text-base sm:text-lg">
       Real-Time Cybersecurity System
     </p>
 

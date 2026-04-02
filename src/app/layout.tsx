@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className="bg-[#0A0A0A] text-white"><ClickEffect />{children}</body>
+      <body className="bg-[#0A0A0A] text-white overflow-x-hidden"><ClickEffect />{children}</body>
     </html>
   );
 }
