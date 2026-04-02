@@ -35,10 +35,10 @@ export default function About() {
 
           {/* TECH STACK */}
           <div className="mt-6 flex flex-wrap gap-2 sm:gap-3">
-            {["Python","Java","C++","React","Spring Boot","YOLO","OpenCV"].map((tech) => (
+            {["Python","Java","C++","PHP","JavaScript","React","Spring Boot","Laravel","Redis","MySQL"].map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 border border-[#FF3B3B] rounded-full text-xs sm:text-sm hover:bg-[#FF3B3B] hover:text-white transition"
+                className="px-3 py-2 border border-[#FF3B3B] rounded-full text-xs sm:text-sm hover:bg-[#FF3B3B] hover:text-white transition"
               >
                 {tech}
               </span>
