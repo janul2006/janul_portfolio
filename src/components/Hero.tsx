@@ -46,21 +46,21 @@ export default function Hero() {
         transition={{ delay: 1.3 }}
         className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4"
       >
-        <button className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105 w-full sm:w-auto">
-          <a
+        <a
           href="/Janul_Induwara_CV.pdf"
-           target="_blank"
+          target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105 inline-block text-center"
-          >
-      
+          className="bg-[#FF3B3B] px-6 py-3 rounded-xl glow hover:scale-105 inline-block text-center w-full sm:w-auto"
+        >
           Download CV
-          </a>
-        </button>
+        </a>
 
-        <button className="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black hover:scale-105 w-full sm:w-auto">
+        <a
+          href="#projects"
+          className="theme-pill border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black hover:scale-105 w-full sm:w-auto text-center"
+        >
           View Projects
-        </button>
+        </a>
       </motion.div>
 
     </section>

@@ -14,7 +14,7 @@ export default function Contact() {
     >
       {/* TITLE */}
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 sm:mb-12">
-        Let's <span className="text-[#FF3B3B]">Connect</span>
+        Let&apos;s <span className="text-[#FF3B3B]">Connect</span>
       </h2>
 
       {/* CONTACT CARDS */}
@@ -39,6 +39,7 @@ export default function Contact() {
           <a
             href="https://github.com/janul2006"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-400 hover:text-[#FF3B3B] transition break-all"
           >
             github.com/janul2006
@@ -52,6 +53,7 @@ export default function Contact() {
           <a
             href="https://www.linkedin.com/in/janul-induwara-7a67a9388/"
             target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-400 hover:text-[#FF3B3B] transition break-all"
           >
             Connect with me

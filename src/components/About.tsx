@@ -38,7 +38,7 @@ export default function About() {
             {["Python","Java","C++","PHP","JavaScript","React","Spring Boot","Laravel","Redis","MySQL"].map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-2 border border-[#FF3B3B] rounded-full text-xs sm:text-sm hover:bg-[#FF3B3B] hover:text-white transition"
+                className="theme-pill px-3 py-2 border border-[#FF3B3B] rounded-full text-xs sm:text-sm hover:bg-[#FF3B3B] hover:text-white transition"
               >
                 {tech}
               </span>

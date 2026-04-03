@@ -54,10 +54,10 @@ export default function Projects() {
     </p>
 
     <div className="mt-4 flex flex-wrap gap-2 text-xs">
-      <span className="bg-gray-800 px-2 py-1 rounded">YOLOv8</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">OCR</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">Computer Vision</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">Python</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">YOLOv8</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">OCR</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">Computer Vision</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">Python</span>
     </div>
 
     <div className="mt-4 text-xs text-gray-500">
@@ -80,7 +80,7 @@ export default function Projects() {
              GoWaste
           </h3>
 
-          <p className="text-[#00FF9C] font-bold text-base sm:text-lg">
+          <p className="theme-accent-text dark:text-[#00FF9C] font-bold text-base sm:text-lg">
             Smart Waste Solution
           </p>
 
@@ -90,9 +90,9 @@ export default function Projects() {
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            <span className="bg-gray-800 px-2 py-1 rounded">Figma</span>
-            <span className="bg-gray-800 px-2 py-1 rounded">UI/UX</span>
-            <span className="bg-gray-800 px-2 py-1 rounded">Design Thinking</span>
+            <span className="theme-tag bg-gray-800 px-2 py-1 rounded">Figma</span>
+            <span className="theme-tag bg-gray-800 px-2 py-1 rounded">UI/UX</span>
+            <span className="theme-tag bg-gray-800 px-2 py-1 rounded">Design Thinking</span>
           </div>
 
           <div className="mt-4 text-xs text-gray-500">
@@ -114,7 +114,7 @@ export default function Projects() {
              Smart Incident System
           </h3>
 
-           <p className="text-[#00D1FF] font-bold text-base sm:text-lg">
+           <p className="theme-accent-text dark:text-[#00D1FF] font-bold text-base sm:text-lg">
              Real-Time Monitoring
           </p>
 
@@ -124,10 +124,10 @@ export default function Projects() {
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            <span className="bg-gray-800 px-2 py-1 rounded">React</span>
-            <span className="bg-gray-800 px-2 py-1 rounded">Spring Boot</span>
-            <span className="bg-gray-800 px-2 py-1 rounded">REST API</span>
-            <span className="bg-gray-800 px-2 py-1 rounded">MySQL</span>
+            <span className="theme-tag bg-gray-800 px-2 py-1 rounded">React</span>
+            <span className="theme-tag bg-gray-800 px-2 py-1 rounded">Spring Boot</span>
+            <span className="theme-tag bg-gray-800 px-2 py-1 rounded">REST API</span>
+            <span className="theme-tag bg-gray-800 px-2 py-1 rounded">MySQL</span>
           </div>
 
           <div className="mt-4 text-xs text-gray-500">
@@ -151,7 +151,7 @@ export default function Projects() {
       AI Phishing Detection Platform
     </h3>
 
-      <p className="text-[#00FF9C] font-bold text-base sm:text-lg">
+      <p className="theme-accent-text dark:text-[#00FF9C] font-bold text-base sm:text-lg">
       Real-Time Cybersecurity System
     </p>
 
@@ -162,12 +162,12 @@ export default function Projects() {
     </p>
 
     <div className="mt-4 flex flex-wrap gap-2 text-xs">
-      <span className="bg-gray-800 px-2 py-1 rounded">Laravel</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">FastAPI</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">React</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">LightGBM</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">Redis</span>
-      <span className="bg-gray-800 px-2 py-1 rounded">MySQL</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">Laravel</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">FastAPI</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">React</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">LightGBM</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">Redis</span>
+      <span className="theme-tag bg-gray-800 px-2 py-1 rounded">MySQL</span>
     </div>
 
     <div className="mt-4 text-xs text-gray-500">

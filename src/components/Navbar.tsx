@@ -2,12 +2,37 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
-import logo from "../img/logo.png";
+import darkLogo from "../img/logo(dark).png";
+import lightLogo from "../img/logo2.png";
 
 export default function Navbar() {
   const [logoFailed, setLogoFailed] = useState(false);
+  const [dark, setDark] = useState(
+    () =>
+      typeof document !== "undefined" &&
+      document.documentElement.classList.contains("dark"),
+  );
+
+  useEffect(() => {
+    if (typeof document === "undefined") {
+      return;
+    }
+
+    const observer = new MutationObserver(() => {
+      setDark(document.documentElement.classList.contains("dark"));
+    });
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const activeLogo = dark ? darkLogo : lightLogo;
 
   return (
     <motion.nav
@@ -24,15 +49,25 @@ border-b border-[#D1D5DB] dark:border-white/10
       <div className="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center px-4 sm:px-6 lg:px-10 py-3 sm:py-4">
 
         {/* LOGO */}
-        <div className="relative h-14 w-14 sm:h-14 sm:w-14 self-start sm:self-auto">
+        <div
+          className={`relative h-16 w-16 sm:h-20 sm:w-20 self-start sm:self-auto overflow-hidden rounded-full ${
+            dark
+              ? "border border-white/10 bg-black shadow-[0_10px_30px_rgba(0,0,0,0.45)]"
+              : "border border-[#D1D5DB] bg-white shadow-[0_10px_25px_rgba(15,23,42,0.14)]"
+          }`}
+        >
           {!logoFailed ? (
             <Image
-              src={logo}
-              alt="Janul Induwara logo"
+              src={activeLogo}
+              alt={dark ? "Janul Induwara dark mode logo" : "Janul Induwara light mode logo"}
               fill
-            
               priority
-              className="rounded-full object-cover shadow-xl scale-150"
+              sizes="80px"
+              className={`rounded-full object-cover ${
+                dark
+                  ? "scale-[1.5] brightness-100 contrast-110"
+                  : "scale-[1.78] brightness-100 contrast-105"
+              }`}
               onError={() => setLogoFailed(true)}
             />
           ) : (
